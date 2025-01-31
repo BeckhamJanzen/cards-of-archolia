@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archolia Trading Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Archolia Trading Cards!</h1>
+        
+        <div id="topButtons">
+            <p>Your cash: $<span id="cash">5.00</span></p>
+            <button onclick="earnCoins()">Look for Coins</button>
+            <button onclick="buyPack()">Buy a Pack ($1)</button>
+        </div>
+
+        <div id="cardContainer"></div>
+        
+        <!-- Info button -->
+        <button id="infoButton" onclick="showInfo()">Info</button>
+
+        <!-- Info modal -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeInfo()">&times;</span>
+                <h2>Game Info</h2>
+                <p><strong>Grades:</strong></p>
+                <ul>
+                    <li>Grade 10: x10 (70% chance)</li>
+                    <li>Grade 9: x3 (20% chance)</li>
+                    <li>Grade 8: x2 (8% chance)</li>
+					<li>Grade 7: x1 (2% chance)</li>
+                </ul>
+                <p><strong>Rarities:</strong></p>
+                <ul>
+                    <li>Common: x1 (75% chance)</li>
+                    <li>Uncommon: x2 (15% chance)</li>
+                    <li>Rare: x3 (7% chance)</li>
+                    <li>Legendary: x5 (2.5% chance)</li>
+                    <li>Mythic: x50 (0.5% chance)</li>
+                </ul>
+                <p><strong>Base Prices:</strong></p>
+                <ul>
+                    <li>Glorpo: $0.05</li>
+                    <li>Poisin: $0.02</li>
+                    <li>Prettymid: $0.01</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="base.js"></script>
+</body>
+</html>
