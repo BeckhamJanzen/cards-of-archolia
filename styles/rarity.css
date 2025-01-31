@@ -1,0 +1,25 @@
+/* Rarity-Specific Styles */
+.card.common {
+    background-color: #e0e0e0; /* Light gray for common */
+    border-color: #999999;
+}
+
+.card.uncommon {
+    background-color: #a1c4fd; /* Light blue for uncommon */
+    border-color: #6a92d1;
+}
+
+.card.rare {
+    background-color: #ffd700; /* Gold for rare */
+    border-color: #d4af37;
+}
+
+.card.legendary {
+    background-color: #ff8c00; /* Orange for legendary */
+    border-color: #ff4500;
+}
+
+.card.mythic {
+    background-color: #9b59b6; /* Purple for mythic */
+    border-color: #8e44ad;
+}

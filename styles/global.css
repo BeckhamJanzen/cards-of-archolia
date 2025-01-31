@@ -1,0 +1,33 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Replace this with your custom font if needed */
+    background-color: #f4f4f4;
+    color: #333c57; /* Darker text for contrast */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none; /* Prevent text from being highlighted */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes up the full height */
+    flex-direction: column;
+}
+
+/* Main Container */
+#container {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+h1 {
+    color: #257179;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,8 @@
+/* Pixel Art Image Style */
+.pixel-art {
+    width: 60px;
+    height: 60px;
+    image-rendering: pixelated;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}

@@ -1,0 +1,25 @@
+Rarities
+
+	Common:    75.0% - x1
+	Uncommon:  15.0% - x2
+	Rare:       7.0% - x5
+	Epic:       2.0% - x10
+	Legendary:  0.9% - x20
+	Mythic:     0.1% - x100
+	
+	E=∑(Pi​×Mi​)
+
+	Where:
+
+		Pi​ is the probability of each rarity.
+		Mi​ is the multiplier for that rarity.
+		
+Set 1
+
+Style: Baushaus (https://deepai.org/machine-learning-model/bauhaus-design-generator)
+Cards In Set: 20 (20 + 10 alts + 3altalts)
+20 unique Archolians. 10 of those will be made into alternate arts. 3 will be made into very special ones
+
+Value of the card is (Archolia Base Price) * (Rarity Mult) * (Art Class Mult) * (Condition Mult)
+For Example:
+Pikachu (5 cents) * Legendary (x10) * Alt Art (x5) * Condition (Bad x0.2)
