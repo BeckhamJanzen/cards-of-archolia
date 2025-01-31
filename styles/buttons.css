@@ -10,12 +10,18 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #38b764;
+    background-color: #38b764; /* Adjust for dark mode */
     color: white;
     transition: background-color 0.3s ease, transform 0.2s;
 }
 
+/* Hover effect */
 button:hover {
-    background-color: #257179;
+    background-color: #3b7e7a; /* Lighter shade on hover */
     transform: scale(1.1);
+}
+
+/* Focus effect (optional for accessibility) */
+button:focus {
+    outline: 3px solid #aad1c6; /* Light outline to indicate focus */
 }

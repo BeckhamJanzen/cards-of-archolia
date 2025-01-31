@@ -1,21 +1,3 @@
-/* Info Button */
-#infoButton {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #38b764;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50%;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-
-#infoButton:hover {
-    background-color: #257179;
-    transform: scale(1.1);
-}
-
 /* Modal Styles */
 .modal {
     display: none;

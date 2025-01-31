@@ -11,7 +11,7 @@ const rarities = [ //Bauhaus, Set 1
 	
 	//Unique Art 'Shadow' (3)
     { type: "Legendary" , chance: 0.009 , multiplier: 50.0  },
-    { type: "Mythic"    , chance: 0.001 , multiplier: 100.0 }
+    { type: "Obsidian"  , chance: 0.001 , multiplier: 100.0 }
 ];
 
 const grades = [

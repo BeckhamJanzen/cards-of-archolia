@@ -1,8 +1,11 @@
 /* Global Styles */
+* {
+    font-family: 'Georgia', serif; /* Replace this with your custom font if needed */
+}
+
 body {
-    font-family: 'Arial', sans-serif; /* Replace this with your custom font if needed */
-    background-color: #f4f4f4;
-    color: #333c57; /* Darker text for contrast */
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text for contrast */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,14 +23,14 @@ body {
     max-width: 900px;
     width: 100%;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #1f1f1f; /* Darker container background */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
 }
 
 /* Header */
 h1 {
-    color: #257179;
+    color: #aad1c6; /* Lighter text color for the header */
     font-size: 2rem;
     margin-bottom: 20px;
 }
