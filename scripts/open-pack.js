@@ -1,7 +1,6 @@
 // Open a pack and display the Archolia with names, images, grades, and prices
 function openPack() {
     let container = document.getElementById("cardContainer");
-    container.innerHTML = ""; // Clear previous cards
 
     for (let i = 0; i < 5; i++) {
         let randomArcholia = archolia[Math.floor(Math.random() * archolia.length)];
