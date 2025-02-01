@@ -1,5 +1,3 @@
-let cash = 5.00; //Starting Money
-
 const rarities = [ //Bauhaus, Set 1
 	//Basic Art (18) (Standard Style, Basic Background)
     { type: "Common"    , chance: 0.750 , multiplier: 1.0   },

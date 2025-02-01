@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archolia Trading Cards</title>
+    <title>Archolia</title>
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/images.css">
-    <link rel="stylesheet" href="styles/rarity.css">
-    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/tabs.css">
+    <link rel="stylesheet" href="styles/info.css">
 </head>
 <body>
     <div id="container">
-        <h1>Archolia Trading Cards!</h1>
+        <h1>Archolia</h1>
 
         <!-- Tab Buttons -->
         <div class="tab-container">
@@ -32,54 +31,15 @@
             <div id="cardContainer"></div>
         </div>
 
-		<!-- Info Tab -->
-		<div id="infoTab" class="tab-content">
-			<h2>Game Info</h2>
-			
-			<p><strong>Grades:</strong></p>
-			<ul>
-				<li>Grade 10: x10 (15% chance)</li>
-				<li>Grade 9: x3 (60% chance)</li>
-				<li>Grade 8: x2 (20% chance)</li>
-				<li>Grade 7: x1 (5% chance)</li>
-			</ul>
-			
-			<p><strong>Rarities:</strong></p>
-			<ul>
-				<li>Common: x1 (75% chance)</li>
-				<li>Uncommon: x2 (15% chance)</li>
-				<li>Rare: x5 (7% chance)</li>
-				<li>Epic: x10 (2% chance)</li>
-				<li>Legendary: x50 (0.9% chance)</li>
-				<li>Obsidian: x100 (0.1% chance)</li>
-			</ul>
-			
-			<p><strong>Base Prices:</strong></p>
-			<ul>
-				<li>Fluffernox: $0.01</li>
-				<li>Zapoodle: $0.02</li>
-				<li>Gloombite: $0.03</li>
-				<li>Quibberoo: $0.04</li>
-				<li>Drizzlisk: $0.05</li>
-				<li>Mossmunk: $0.06</li>
-				<li>Spindleek: $0.07</li>
-				<li>Tufflair: $0.08</li>
-				<li>Boggleaf: $0.09</li>
-				<li>Vexowl: $0.10</li>
-				<li>Fungnash: $0.12</li>
-				<li>Glimmeruff: $0.14</li>
-				<li>Brambite: $0.16</li>
-				<li>Zyrmox: $0.18</li>
-				<li>Cindrake: $0.20</li>
-				<li>Noxtail: $0.30</li>
-				<li>Frillusk: $0.50</li>
-				<li>Skuddle: $1.00</li>
-			</ul>
-		</div>
+        <!-- Info Tab -->
+        <div id="infoTab" class="tab-content"></div>
     </div>
 
+	<script src="scripts/gameData.js"></script>
     <script src="scripts/open-pack.js"></script>
     <script src="scripts/base.js"></script>
 	<script src="scripts/main.js"></script>
+	<script src="scripts/view.js"></script>
+
 </body>
 </html>

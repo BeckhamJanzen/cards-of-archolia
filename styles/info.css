@@ -1,0 +1,49 @@
+/* Styling for the Info Tab */
+#infoTab {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style headings in the info tab */
+#infoTab h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #aad1c6;
+}
+
+#infoTab h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #38b764;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Style info sections for spacing */
+.info-section {
+    margin-bottom: 20px;
+}
+
+/* Style the unordered lists */
+#infoTab ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#infoTab ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+/* Optionally, add a hover effect on list items */
+#infoTab ul li:hover {
+    color: #38b764;
+    cursor: default;
+}

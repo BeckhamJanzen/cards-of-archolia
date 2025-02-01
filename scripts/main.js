@@ -1,50 +1,27 @@
 function updateCash() {
-    document.getElementById("cash").textContent = cash.toFixed(2);
+    document.getElementById("cash").textContent = gameData.cash.toFixed(2);
 }
 
 function earnCoins() {
     let earnings = (Math.random() * 0.05 + 0.01).toFixed(2); // Earn between $0.01 - $0.05
-    cash += parseFloat(earnings);
+    gameData.cash += parseFloat(earnings);
+    gameData.save(); // Save the updated cash balance
     updateCash();
 }
 
 function buyPack() {
-    if (cash >= 1.00) {
-        cash -= 1.00;
+    if (gameData.cash >= 1.00) {
+        gameData.cash -= 1.00;
+        gameData.save(); // Save the updated cash balance
         updateCash();
         openPack();
-    } else {
-        alert("Not enough money!");
     }
 }
 
-// Get a random item from an array based on weighted chance
-function getRandomItem(array) {
-    let roll = Math.random();
-    let cumulativeChance = 0;
-
-    for (let item of array) {
-        cumulativeChance += item.chance;
-        if (roll < cumulativeChance) {
-            return item;
-        }
-    }
-    return array[array.length - 1]; // Fallback in case of floating-point errors
-}
-
-// Handle selling a card and updating the balance
 function sellCard(amount) {
-    cash += amount;
+    gameData.cash += amount;
+    gameData.save(); // Save the updated cash balance
     updateCash();
-}
-
-// Info modal logic
-function showInfo() {
-    document.getElementById("infoModal").style.display = "block"; // Show modal
-}
-
-function closeInfo() {
-    document.getElementById("infoModal").style.display = "none"; // Hide modal
 }
 
 // Close modal when clicking outside of it
@@ -70,4 +47,29 @@ function switchTab(tabId) {
 
     // Add 'active' class to the clicked tab
     event.currentTarget.classList.add('active');
+}
+
+
+window.onload = function() {
+    populateInfo();
+    gameData.load(); // Load saved data (including cash)
+    gameData.render(); // Render cards and update cash display
+};
+
+// Example utility to pick a random item from an array by weighted chance
+function getRandomItem(array) {
+    let roll = Math.random();
+    let cumulativeChance = 0;
+    for (let item of array) {
+        cumulativeChance += item.chance;
+        if (roll < cumulativeChance) {
+            return item;
+        }
+    }
+    return array[array.length - 1]; // Fallback in case of rounding errors
+}
+
+// Calculate final price from base price, rarity multiplier, and grade multiplier
+function calculatePrice(card, rarity, grade) {
+    return card.price * rarity.multiplier * grade.multiplier;
 }

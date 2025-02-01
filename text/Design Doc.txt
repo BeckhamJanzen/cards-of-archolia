@@ -1,12 +1,5 @@
 Rarities
 
-	Common:    75.0% - x1
-	Uncommon:  15.0% - x2
-	Rare:       7.0% - x5
-	Epic:       2.0% - x10
-	Legendary:  0.9% - x20
-	Mythic:     0.1% - x100
-	
 	E=∑(Pi​×Mi​)
 
 	Where:
