@@ -13,10 +13,18 @@ const rarities = [ //Bauhaus, Set 1
 ];
 
 const grades = [
-    { grade: 7  , chance: 0.05 , multiplier: 1.0  },
-    { grade: 8  , chance: 0.20 , multiplier: 2.0  },
-    { grade: 9  , chance: 0.60 , multiplier: 3.0  },
-    { grade: 10 , chance: 0.15 , multiplier: 10.0 }
+	{ grade: 0  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+    { grade: 1  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+    { grade: 2  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+	{ grade: 3  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+	{ grade: 4  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+    { grade: 5  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+    { grade: 6  , chance: 0.00 , multiplier: 0.0  , jaggedness: 0 },
+
+    { grade: 7  , chance: 0.05 , multiplier: 1.0  , jaggedness: 3 },
+    { grade: 8  , chance: 0.20 , multiplier: 2.0  , jaggedness: 2 },
+    { grade: 9  , chance: 0.60 , multiplier: 3.0  , jaggedness: 1 },
+    { grade: 10 , chance: 0.15 , multiplier: 10.0 , jaggedness: 0 }
 ];
 
 const archolia = [

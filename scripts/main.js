@@ -62,6 +62,7 @@ function getRandomItem(array) {
     let cumulativeChance = 0;
     for (let item of array) {
         cumulativeChance += item.chance;
+        //cumulativeChance += 1 / array.length;
         if (roll < cumulativeChance) {
             return item;
         }

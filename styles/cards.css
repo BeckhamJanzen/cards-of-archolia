@@ -31,23 +31,23 @@
 }
 
 .card.uncommon {
-    background-color: #a1c4fd; /* Light blue for uncommon */
-    border-color: #6a92d1;
+    background-color: #2ecc71; /* Green for uncommon */
+    border-color: #27ae60;
 }
 
 .card.rare {
-    background-color: #ffd700; /* Gold for rare */
-    border-color: #d4af37;
+    background-color: #3498db; /* Blue for rare */
+    border-color: #2980b9;
 }
 
 .card.epic {
-    background-color: #8e44ad; /* Purple for epic */
-    border-color: #6c3483;
+    background-color: #9b59b6; /* Purple for epic */
+    border-color: #8e44ad;
 }
 
 .card.legendary {
-    background-color: #ff8c00; /* Orange for legendary */
-    border-color: #ff4500;
+    background-color: #ffd700; /* Gold for legendary */
+    border-color: #d4af37;
 }
 
 .card.obsidian {
